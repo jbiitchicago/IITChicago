@@ -1,5 +1,5 @@
 # IITChicago
-Academic Projects and papers
+Academic Projects
 
 Android Project - Marshmallow API 23
 Virtual Trade - Market Movers (First App) that gives the real-time prices of Nifty and Sensex stocks and those that are 
