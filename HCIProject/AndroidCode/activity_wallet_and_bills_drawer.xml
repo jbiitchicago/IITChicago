@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="Account" />
+        <item
+            android:id="@+id/nav_cards"
+            android:icon="@drawable/cards"
+            android:title="Manage Cards" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/wallet"
+            android:title="Fund wallet" />
+
+        <item
+            android:id="@+id/nav_analytics"
+            android:icon="@drawable/analytics"
+            android:title="Analyze Transactions" />
+
+        <item
+            android:id="@+id/nav_promomap"
+            android:icon="@drawable/promomap"
+            android:title="Map View" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/support"
+                android:title="Support" />
+        </menu>
+    </item>
+
+</menu>

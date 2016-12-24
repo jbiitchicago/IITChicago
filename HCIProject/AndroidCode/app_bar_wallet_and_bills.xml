@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ray.indigo.spotscustomer.WalletAndBillsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="8pt"
+        android:layout_marginEnd="8pt">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/walletbal"
+                android:text="WALLET BALANCE: RS. 900"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:layout_marginTop="30pt"
+                android:layout_marginBottom="10pt"/>
+
+            <Button
+                android:layout_width="80pt"
+                android:layout_height="wrap_content"
+                android:background="#2ECC71"
+                android:textSize="8pt"
+                android:text="FUND WALLET"
+                android:id="@+id/button5"
+                android:layout_alignEnd="@+id/button1"
+                android:layout_below="@+id/walletbal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/billtxt"
+            android:layout_height="wrap_content"
+            android:text="@string/bills"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            android:layout_below="@+id/walletbal"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="68dp" />
+        <Button
+            android:layout_width="40pt"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:textSize="8pt"
+            android:layout_marginRight="8pt"
+            android:background="@color/but1"
+            android:id="@+id/button"
+            android:layout_alignBottom="@+id/billtxt"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:textSize="8pt"
+            android:text="Reject"
+            android:id="@+id/button1"
+            android:layout_alignBottom="@+id/billtxt"
+            android:layout_toEndOf="@+id/button" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/billtxt1"
+                android:layout_height="wrap_content"
+                android:text="@string/bills1"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:layout_below="@+id/button1"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="38dp" />
+            <Button
+                android:layout_width="40pt"
+                android:layout_height="wrap_content"
+                android:text="Pay"
+                android:textSize="8pt"
+                android:layout_marginRight="8pt"
+                android:background="@color/but1"
+                android:id="@+id/button3"
+                android:layout_alignBottom="@+id/billtxt"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:textSize="8pt"
+                android:text="Reject"
+                android:id="@+id/button4"
+                android:layout_alignBottom="@+id/billtxt"
+                android:layout_toEndOf="@+id/button" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

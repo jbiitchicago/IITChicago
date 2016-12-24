@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ray.indigo.spotscustomer.SignUpSuccess">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/signup_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="541dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="30pt"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.11" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:layout_marginStart="4pt"
+        android:layout_marginTop="20pt"
+            android:layout_marginBottom="30pt"
+        android:text="Hello, you have successfully signed up for Spots Wallet!"
+        android:textSize="12pt"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="130pt"
+        android:id="@+id/start"
+        android:background="@color/but1"
+        android:textColor="@color/black"
+        android:layout_marginEnd="2pt"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:textSize="10pt"
+        android:text="START USING SPOTS"/>
+
+       </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+
+        android:src="@drawable/exit" />
+
+
+</android.support.design.widget.CoordinatorLayout>
